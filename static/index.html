@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mobile Rating System</title>
-  <link rel="stylesheet" href="{{ url_for('static',filename = 'style.css') }}">
+  <link rel="stylesheet" href="style.css">
   <div class="box"><h1>📱 Mobile Rating System</h1></div>
   
   <h3>Select Your Mobile Specifications:</h3>
@@ -146,8 +146,8 @@
       </div>
 
       <div class="form-group">
-        <label for="prefrence">Preference</label>
-        <select id="prefrence" required>
+        <label for="preference">Preference</label>
+        <select id="preference" required>
           <option value="">Select Your Prefernce</option>
           <option value="Performance">Performance</option>
           <option value="Camera">Camera</option>
@@ -162,6 +162,6 @@
     <div id="output"></div>
   </div>
 
-  <script src="{{ url_for('static',filename = 'script.js') }}"></script>
+  <script src="script.js"></script>
 </body>
 </html>
