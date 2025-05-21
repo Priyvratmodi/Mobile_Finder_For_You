@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobile Rating System</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename = 'style.css') }}">
+  <div class="box"><h1>📱 Mobile Rating System</h1></div>
+  
+  <h3>Select Your Mobile Specifications:</h3>
+</head>
+<body>
+  <div class="container">
+    
+
+    <form id="ratingForm">
+      <div class="form-group">
+        <label for="ram">RAM (GB)	💾</label>
+        <select id="ram" required>
+          <option value="">Select RAM</option>
+          <option value="2">2 GB</option>
+          <option value="4">4 GB</option>
+          <option value="6">6 GB</option>
+          <option value="8">8 GB</option>
+          <option value="12">12 GB</option>
+          <option value="16">16 GB</option>
+          <option value="18">18 GB</option>
+          <option value="24">24 GB</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="processor">Processor🧠</label>
+        <select id="processor" required>
+          <option value="Snapdragon 450">Snapdragon 450</option>
+          <option value="Exynos 7870">Exynos 7870</option>
+          <option value="Snapdragon 425">Snapdragon 425</option>
+          <option value="Exynos 7570">Exynos 7570</option>
+          <option value="Snapdragon 617">Snapdragon 617</option>
+          <option value="Unisoc T618">Unisoc T618</option>
+          <option value="MediaTek Helio P22T">MediaTek Helio P22T</option>
+          <option value="Exynos 9810">Exynos 9810</option>
+          <option value="Spreadtrum SC8830">Spreadtrum SC8830</option>
+          <option value="Qualcomm MSM8916">Qualcomm MSM8916</option>
+          <option value="Snapdragon 782G">Snapdragon 782G</option>
+          <option value="Qualcomm Snapdragon 690">Qualcomm Snapdragon 690</option>
+          <option value="Dimensity 1100">Dimensity 1100</option>
+          <option value="Snapdragon 626">Snapdragon 626</option>
+          <option value="MediaTek Helio P22">MediaTek Helio P22</option>
+          <option value="Snapdragon 615">Snapdragon 615</option>
+          <option value="Snapdragon 439">Snapdragon 439</option>
+          <option value="Snapdragon 652">Snapdragon 652</option>
+          <option value="MediaTek MT6592">MediaTek MT6592</option>
+          <option value="Snapdragon 430">Snapdragon 430</option>
+          <option value="Dimensity 6300">Dimensity 6300</option>
+          <option value="Qualcomm Snapdragon 480">Qualcomm Snapdragon 480</option>
+          <option value="Snapdragon 460">Snapdragon 460</option>
+          <option value="Snapdragon 632">Snapdragon 632</option>
+          <option value="Helio P22">Helio P22</option>
+          <option value="Kirin 990E 5G">Kirin 990E 5G</option>
+          <option value="Kirin 9000 5G">Kirin 9000 5G</option>
+          <option value="Snapdragon 480+">Snapdragon 480+</option>
+          <option value="Snapdragon 730G">Snapdragon 730G</option>
+          <option value="MediaTek G99">MediaTek G99</option>
+          <option value="MediaTek Dimensity 9200+">MediaTek Dimensity 9200+</option>
+          <option value="MediaTek Helio G35">MediaTek Helio G35</option>
+          <option value="Kirin 710F">Kirin 710F</option>
+          <option value="Kirin 985 5G">Kirin 985 5G</option>
+          <option value="Kirin 710A">Kirin 710A</option>
+          <option value="MediaTek Dimensity 1000+">MediaTek Dimensity 1000+</option>
+          <option value="MediaTek Dimensity 800U">MediaTek Dimensity 800U</option>
+          <option value="Qualcomm Snapdragon 888">Qualcomm Snapdragon 888</option>
+          <option value="MediaTek MT6762G Helio G25">MediaTek MT6762G Helio G25</option>
+          <option value="MediaTek Dimensity 8000">MediaTek Dimensity 8000</option>
+          <option value="Qualcomm Snapdragon 7 Gen 1">Qualcomm Snapdragon 7 Gen 1</option>
+          <option value="Qualcomm Snapdragon 662">Qualcomm Snapdragon 662</option>
+          <option value="MediaTek MT8768T">MediaTek MT8768T</option>
+          <option value="MediaTek Dimensity 1300T">MediaTek Dimensity 1300T</option>
+          <option value="Snapdragon 720G">Snapdragon 720G</option>
+          <option value="Snapdragon 732G">Snapdragon 732G</option>
+          <option value="Snapdragon 860">Snapdragon 860</option>
+          <option value="MediaTek Dimensity 1100">MediaTek Dimensity 1100</option>
+          <option value="MediaTek Helio G95">MediaTek Helio G95</option>
+          <option value="Snapdragon 7+ Gen 2">Snapdragon 7+ Gen 2</option>
+          <option value="Snapdragon 4 Gen 1">Snapdragon 4 Gen 1</option>
+          <option value="MediaTek Dimensity 8300">MediaTek Dimensity 8300</option>
+          <option value="Snapdragon 8+ Gen 2">Snapdragon 8+ Gen 2</option>
+          <option value="MediaTek Dimensity 840">MediaTek Dimensity 840</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="battery">Battery Capacity (mAh)🔋</label>
+        <select id="battery" required>
+          <option value="">Select Battery Capacity</option>
+          <option value="2000">2000</option>
+          <option value="3000">3000</option>
+          <option value="4000">4000</option>
+          <option value="5000">5000</option>
+          <option value="5500">5500</option>
+          <option value="6000">6000</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="frontCamera">Front Camera (MP)🤳</label>
+        <select id="frontCamera" required>
+          <option value="">Select Front Camera</option>
+          <option value="4">4 MP</option>
+          <option value="6">6 MP</option>
+          <option value="8">8 MP</option>
+          <option value="12">12 MP</option>
+          <option value="16">16 MP</option>
+          <option value="24">24 MP</option>
+          <option value="32">32 MP</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="backCamera">Back Camera (MP)📷</label>
+        <select id="backCamera" required>
+          <option value="">Select Back Camera</option>
+          <option value="12">12 MP</option>
+          <option value="16">16 MP</option>
+          <option value="24">24 MP</option>
+          <option value="32">32 MP</option>
+          <option value="48">48 MP</option>
+          <option value="64">64 MP</option>
+          <option value="108">108 MP</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="screenSize">Screen Size (inches)📱</label>
+        <select id="screenSize" required>
+          <option value="">Select Screen Size</option>
+          <option value="5.0">5.0"</option>
+          <option value="5.5">5.5"</option>
+          <option value="6.0">6.0"</option>
+          <option value="6.1">6.1"</option>
+          <option value="6.5">6.5"</option>
+          <option value="6.7">6.7"</option>
+          <option value="6.8">6.8"</option>
+          <option value="6.9">6.9"</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="prefrence">Preference</label>
+        <select id="prefrence" required>
+          <option value="">Select Your Prefernce</option>
+          <option value="Performance">Performance</option>
+          <option value="Camera">Camera</option>
+          <option value="Battery">Battery</option>
+          <option value="FormFactor">Formfactor</option>
+        </select>
+      </div>
+
+      <button type="submit" id="rateButton">Rate Now</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="{{ url_for('static',filename = 'script.js') }}"></script>
+</body>
+</html>
